@@ -1,0 +1,10 @@
+datasources:2109dc8da3e32b5444526cdd8e4a2cd5067c5cb0
+commandlineoptions:5ea3922db11a42de3fa4c89e9d9f06972f891d9e
+suitesfrom:no-suites-from-option
+file:b946ea3cd8574d0873d727befc991917e79f61f2
+--suite Tests.API.Transfer Funds Api Test
+--suite Tests.API.Validate Account Creation
+--suite Tests.UI.Login Test
+--suite Tests.UI.Open Account Test
+--suite Tests.UI.Register Test
+--suite Tests.UI.Transfer Funds Test
