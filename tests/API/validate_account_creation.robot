@@ -10,14 +10,14 @@ Test Setup   Open Application
 Test Teardown  Close Application
 *** Test Cases ***
 TC-AC-API-01 Validate Account Creation
-    [Documentation]  Check that account creation is successful by validating account details from account id
+    [Documentation]  Check that account creation is successful by validating  from account id
     [Tags]  API
     Check login
     Validate Account Creation
     Log To Console    Account Created Successfully
 
 TC-AC-API-02 Get Accounts from Customer Id
-    [Documentation]  Check that account creation is successful by validating account details from customer id
+    [Documentation]   Get all the accounts of a customer from customer id
     [Tags]  API
     Check login
     Get accounts from customer id

@@ -9,14 +9,14 @@ Suite Setup  Load Environment
 Test Setup   Open Application
 Test Teardown  Close Application
 *** Test Cases ***
-TC-REG-UI-04 Open Checking Account
+TC-AC-UI-01 Open Checking Account
     [Documentation]  Check that a user is able to open checking account
     [Tags]  UI
     Check login
     Open Checking Account
 
 
-TC-REG-UI-05 Open Savings Account
+TC-AC-UI-02 Open Savings Account
     [Documentation]  Check that user is able to open saving account
     [Tags]  UI
     Check login

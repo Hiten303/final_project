@@ -35,7 +35,6 @@ TC-TF-UI-02 Transfer more fund than balance
        ${BALANCE}=    Get Account balance    ${ACCOUNT_ID_1}
        ${VALUE}=     Evaluate    ${BALANCE}+1
        Transfer fund to other account   ${ACCOUNT_ID_1}   ${ACCOUNT_ID_2}    ${VALUE}
-       Sleep    3s
 
 TC-TF-UI-03 Transfer negative funds
        [Documentation]  Transfer negative funds to other account
@@ -46,7 +45,6 @@ TC-TF-UI-03 Transfer negative funds
 
        Transfer fund to other account    ${ACCOUNT_ID_1}   ${ACCOUNT_ID_2}    -100
 
-       Sleep    3s
 
 TC-TF-UI-04 Transfer valid amount to self account
        [Documentation]  Transfer fund to self account
@@ -55,17 +53,16 @@ TC-TF-UI-04 Transfer valid amount to self account
        ${ACCOUNT_ID_1}=  Open Savings Account
        ${BALANCE}=    Get Account balance     ${ACCOUNT_ID_1}
        Transfer fund to same account    ${ACCOUNT_ID_1}    ${BALANCE}
-       Sleep    3s
 
 TC-TF-UI-05 Transfer invalid amount to self account
-       [Documentation]  Transfer negative funds
+       [Documentation]  Transfer negative funds to self account
        [Tags]  UI
        Check login
        ${ACCOUNT_ID_1}=  Open Savings Account
        ${BALANCE}=    Get Account balance     ${ACCOUNT_ID_1}
        Transfer fund to same account    ${ACCOUNT_ID_1}    -100
 
-TC-TF-UI-05 Validate balance
+TC-TF-UI-06 Validate balance
        [Documentation]   Validate balance consistency before and after fund transfer
        [Tags]   Hybrid
        Check login

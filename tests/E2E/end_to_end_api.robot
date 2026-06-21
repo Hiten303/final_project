@@ -28,7 +28,9 @@ Test Setup  Open Application
 Test Teardown  Close Application
 
 *** Test Cases ***
-TC-E2E-01 Two user full journey
+TC-E2E-02 Fund transfer two user
+        [Documentation]   Transfer fund from one user to other user
+        [Tags]   E2E
         Register user with arguments    user1    paliwal    43    udaipur    rajasthan    323232    3434343434    11111    user1    333
         ${USER1_ACCOUNT_NUMBER}=  Get Account number
         ${BALANCE_1}=   Get Account balance    ${USER1_ACCOUNT_NUMBER}

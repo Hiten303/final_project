@@ -12,8 +12,8 @@ Test Teardown  Close Application
 
 
 *** Test Cases ***
-TC-AC-API-02 Fund Transfer via api
-    [Documentation]  Check fund transfer via api
+TC-TF-API-01 Fund Transfer via api
+    [Documentation]  Fund transfer from account number via api
     [Tags]  API
     Check login
     ${ACCOUNT_ID_1}=  Open Savings Account

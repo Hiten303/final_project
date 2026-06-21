@@ -31,13 +31,6 @@ Test Case For Data Driven   ${Firstname}    ${Lastname}    ${Address}    ${City}
    [Tags]   datadriver
 
 *** Keywords ***
-#Navigate To Parabank Register Page
-#    Open Browser    ${BASE_URL}    chrome
-#    Maximize Browser Window
-#    Sleep    2s
-#    Wait Until Element Is Visible    xpath=//a[text()="Register"]  timeout=10s
-#    Click Element    xpath=//a[text()="Register"]
-
 Register User
     
     [Arguments]    ${Firstname}    ${Lastname}    ${Address}    ${City}    ${State}    ${Zipcode}    ${Phno}    ${SSN}    ${Username}    ${Password}    ${Confirm}

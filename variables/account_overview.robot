@@ -1,3 +1,3 @@
 *** Variables ***
-${account_overview}  xpath=//div[@id='leftPanel']//a[text()='Accounts Overview']
+${account_overview}   css=a[href='overview.htm']
 ${account_number_link}  xpath=//table[@id='accountTable']//a

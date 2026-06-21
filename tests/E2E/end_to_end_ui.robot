@@ -12,9 +12,9 @@ Test Teardown  Close Application
 
 
 *** Test Cases ***
-TC-E2E-UI-01 End to end ui
+TC-E2E-01 End to end ui
          [Documentation]    end to end process via ui
-         [Tags]   UI
+         [Tags]   E2E
          Check login
          ${ACCOUNT_ID_1}   Open Savings Account
          ${ACCOUNT_ID_2}   Open Savings Account

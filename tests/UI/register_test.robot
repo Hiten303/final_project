@@ -2,6 +2,7 @@
 Resource  ../../resources/pages/register_page.robot
 Resource  ../../resources/keywords/common_keywords.robot
 Resource    ../../resources/pages/login_page.robot
+Resource    ../../resources/pages/two_user_page.robot
 
 Suite Setup  Load Environment
 Test Setup   Open Application
@@ -11,7 +12,7 @@ Test Teardown  Close Application
 TC-REG-UI-01 Register User
     [Documentation]  Check that new user is regestered
     [Tags]  UI
-    Register User
+    Register user with arguments     hello    paliwal    43    udaipur    rajasthan    323232    3434343434    11111    hello    333
     Wait Until Page Contains
     ...    Your account was created successfully. You are now logged in.
     ...    10s
