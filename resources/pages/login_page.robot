@@ -10,6 +10,7 @@ Resource    register_page.robot
 Login User
    [Documentation]   Log in registered user
    [Tags]  UI
+   Wait Until Element Is Enabled    ${login_username}
     Input Text    ${login_username}    ${USER_NAME}
     Input Text    ${login_password}    ${USER_PWD}
     Click Element    ${log_in_button}

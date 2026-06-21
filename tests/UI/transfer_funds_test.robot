@@ -64,12 +64,12 @@ TC-TF-UI-05 Transfer invalid amount to self account
        ${ACCOUNT_ID_1}=  Open Savings Account
        ${BALANCE}=    Get Account balance     ${ACCOUNT_ID_1}
        Transfer fund to same account    ${ACCOUNT_ID_1}    -100
-       Sleep    3s
 
 TC-TF-UI-05 Validate balance
        [Documentation]   Validate balance consistency before and after fund transfer
        [Tags]   Hybrid
        Check login
+
        ${ACCOUNT_ID_1}=  Open Savings Account
        ${account_1_before_balance}=    Get Account balance    ${ACCOUNT_ID_1}
        ${ACCOUNT_ID_2}=  Open Savings Account
@@ -82,5 +82,4 @@ TC-TF-UI-05 Validate balance
 
        Should Be Equal As Integers    ${total_after_balance}    ${total_balance_before}
        Log To Console    balance is consistent
-       Sleep    3s
 

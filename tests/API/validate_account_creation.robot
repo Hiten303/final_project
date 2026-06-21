@@ -9,20 +9,20 @@ Suite Setup  Load Environment
 Test Setup   Open Application
 Test Teardown  Close Application
 *** Test Cases ***
-TC-AC-API-02 Validate Account Creation
+TC-AC-API-01 Validate Account Creation
     [Documentation]  Check that account creation is successful by validating account details from account id
     [Tags]  API
     Check login
     Validate Account Creation
     Log To Console    Account Created Successfully
 
-TC-AC-API-03 Get Accounts from Customer Id
+TC-AC-API-02 Get Accounts from Customer Id
     [Documentation]  Check that account creation is successful by validating account details from customer id
     [Tags]  API
     Check login
     Get accounts from customer id
 
-TC-AC-API-04 Validate account type and details
+TC-AC-API-03 Validate account type and details
     [Documentation]  Validate account type and details via api
     [Tags]   API
     Check login

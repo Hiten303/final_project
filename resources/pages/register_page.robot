@@ -62,4 +62,9 @@ Registration - Password and confirm mismatch
 Log out
         [Documentation]     Logout user
         [Tags]  UI
-        Click Button    ${logout_button}
+        Wait Until Element Is Enabled    ${logout_button}
+        Wait Until Element Is Visible    ${logout_button}
+        Sleep    3s
+        Click Element    ${logout_button}
+
+

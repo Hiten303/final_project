@@ -10,6 +10,7 @@ Resource  ../../variables/account_overview.robot
 Get Account number
     [Documentation]  Get account number
     [Tags]  UI
+    Wait Until Page Contains Element    ${account_overview}    15s
     Click Element    ${account_overview}
     Wait Until Element Is Visible    ${account_number_link}
     Click Element    ${account_number_link}
@@ -21,6 +22,7 @@ Get Account number
 Get Account type
     [Documentation]  Get account details
     [Tags]  UI
+    Wait Until Element Is Visible    ${account_overview}
     Click Element    ${account_overview}
     Wait Until Element Is Visible    ${account_number_link}
     Click Element    ${account_number_link}
