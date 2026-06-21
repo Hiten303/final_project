@@ -275,10 +275,11 @@ pipeline {
             bat """
                 @echo off
                 echo Cleaning up temporary pycache files (preserving venv and output)...
-                for /d /r %WORKSPACE% %%d in (__pycache__) do (
-                    if exist "%%d" rmdir /s /q "%%d"
+                for /d /r %%i in (__pycache__) do (
+                    if exist "%%d" rmdir /s /q "%%i"
                 )
                 echo Cleanup complete.
+                exit /b 0
             """
         }
 
